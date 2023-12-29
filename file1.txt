@@ -1,1 +1,1 @@
-HelloWorld
+text fot task-16
