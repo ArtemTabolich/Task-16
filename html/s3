@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>Red</title>
+</head>
+<body>
+
+<style>
+	body {
+	background: #fa8e47;
+	color: #fff;
+}
+</style>
+
+</body>
+</html>

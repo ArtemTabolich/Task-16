@@ -1,0 +1,21 @@
+version: '3'
+services:
+  apache2:
+    image: 486205206788.dkr.ecr.us-east-1.amazonaws.com/apache2:latest
+    ports:
+      - 8888:8888
+    networks:
+      - mynetwork
+
+  nginx:
+    image: 486205206788.dkr.ecr.us-east-1.amazonaws.com/nginx1:latest
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - mynetwork
+    volumes:
+      - ./ssl-certificate:/etc/ssl/certs
+
+networks:
+  mynetwork:

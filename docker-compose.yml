@@ -1,0 +1,20 @@
+version: '3'
+services:
+  apache2:
+    build: apache2/
+    ports:
+      - 8888:8888
+    networks:
+      - mynetwork
+
+  nginx:
+    build: .
+    ports:
+      - 80:80
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+
+
