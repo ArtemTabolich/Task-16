@@ -1,14 +1,14 @@
 version: '3'
 services:
   apache2:
-    image: artemtabolich/apache2-task14
+    image: artemtabolich/apache2-task14:latest
     ports:
       - 8888:8888
     networks:
       - mynetwork
 
   nginx:
-    image: artemtabolich/nginx-task14
+    image: artemtabolich/nginx-task14:latest
     ports:
       - 80:80
     networks:
