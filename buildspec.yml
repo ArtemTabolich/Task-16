@@ -12,7 +12,7 @@ phases:
   post_build:
     commands:
       - docker push $IMAGE_REPO_NAME:$IMAGE_TAG
-      - printf '[{"name":"NginxFR","imageUri":" artemtabolich/nginx-task14","portMappings":[{"containerPort":80,"hostPort":80}],"essential":true}]' > imagedefinitions.json
+      - printf '[{"name":"NginxFR","imageUri":"artemtabolich/nginx-task14","portMappings":[{"containerPort":80,"hostPort":80}],"essential":true}]' > imagedefinitions.json
       # - printf '[{"name":"apache2","imageUri":"dmitiriy/artem_forever_apache","portMappings":[{"containerPort":8000,"hostPort":8000}],"essential":true}]' > imagedefinitions_apache.json
 artifacts:
   files:
