@@ -13,7 +13,7 @@ phases:
     commands:
       - docker push $IMAGE_REPO_NAME:$IMAGE_TAG
       - printf '[{"name":"Nginx-Forgate-Dockerhubnew","imageUri":"artemtabolich/nginx-task14","portMappings":[{"containerPort":80,"hostPort":80}],"essential":true}]' > imagedefinitions.json
-      - printf '[{"name":"Apache2-Fargate","imageUri":"artemtabolich/apache2-task14","portMappings":[{"containerPort":8888,"hostPort":8888}],"essential":true}]' > imagedefinitions_apache.json
+      - printf '[{"name":"Apache2-Forgate","imageUri":"artemtabolich/apache2-task14","portMappings":[{"containerPort":8888,"hostPort":8888}],"essential":true}]' > imagedefinitions_apache.json
 artifacts:
   files:
     - imagedefinitions.json
